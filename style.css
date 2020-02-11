@@ -32,15 +32,15 @@ header img {
   margin-top: 0px;
   width: auto;
   text-align: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #2C2A2B;
+  border-bottom: 1px solid #2C2A2B;
   padding: 10px;
   background-color: white;
 }
 
 #page-select-option {
   padding: 50px;
-  color: black;
+  color: #2C2A2B;
 }
 
 .new-container {
@@ -62,4 +62,46 @@ header img {
 .info-container {
   width: 50%;
   display: inline-block;
+  text-align: center;
+}
+
+#code-type h2 {
+  margin-top: 0px;
+  padding: 10px;
+  background-color: #2C2A2B;
+  box-shadow: none;
+}
+
+#code-name {
+  color: white;
+}
+
+.info-container-c {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+
+}
+.name-container h3 {
+  font-size: 30px;
+  margin: 0px;
+}
+.game-container {
+  display: inline-block;
+  text-align: center;
+  width: 92%;
+  height: 504px;
+  margin-bottom: 50px;
+  padding: 0px;
+}
+
+.game {
+  border: 1px solid #2C2A2B;
+  box-shadow: 4px 4px 8px;
+  width: 75%;
+  height: 75%;
 }
