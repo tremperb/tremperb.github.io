@@ -5,10 +5,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #f67811;
+  color: white;
 }
 
 a:hover {
+  color: black;
   text-decoration: underline;
 }
 
@@ -82,10 +83,20 @@ header img {
 
   padding: 10px;
 }
+
 .grid-item {
-  padding: 20px;
+  padding: 15px;
+  border: 1px solid #2C2A2B;
+  margin: 10px;
+  background-color: #2C2A2B;
+  border-radius: 5px;
 
 }
+
+.grid-item:hover {
+  background-color: white;
+}
+
 .name-container h3 {
   font-size: 30px;
   margin: 0px;
