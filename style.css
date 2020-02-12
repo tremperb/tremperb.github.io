@@ -56,6 +56,19 @@ header img {
   width: 80%;
 }
 
+.name-container-h {
+  display: inline-block;
+  margin: 40px;
+  text-align: center;
+  box-shadow: 4px 4px 8px;
+  width: 80%;
+  background: url(background.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .my-name {
   font-size: 50px;
 }
@@ -64,6 +77,13 @@ header img {
   width: 50%;
   display: inline-block;
   text-align: center;
+  border: 1px solid black;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  box-shadow: 4px 4px 8px;
+  margin-bottom: 50px;
 }
 
 #code-type h2 {
