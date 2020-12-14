@@ -4,11 +4,13 @@ body {
 }
 
 a {
+
   text-decoration: none;
   color: white;
 }
 
 a:hover {
+
   color: black;
   text-decoration: underline;
 }
@@ -24,6 +26,7 @@ a:hover {
 #bok-button:active {
   transform: scale(0.9);
 }
+
 
 header {
   background-color: white;

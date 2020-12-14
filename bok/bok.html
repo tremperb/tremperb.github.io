@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+
+    <!-- This 3rd-party stylesheet makes available the font families to be used for this page ("Roboto" and "Roboto Slab"). -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100" rel="stylesheet">
+
+    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script>
+      var bleep = new Audio();
+      bleep.src = "bak_bak_sound.mp3";
+    </script>
+    <!--<script src="/index.js" charset="utf-8" defer></script>-->
+  </head>
+  <body>
+
+    <header>
+
+      <div class="header-image-container">
+        <img src="chicken.png" alt="Bak Bak">
+      </div>
+
+    </header>
+
+    <main class="content">
+
+
+    <section class="new-container">
+      <div class="name-container-h">
+        <a  onmousedown="bleep.play()"><img src="button.png" style="width:400px;height:400px;" id="bok-button"></a>
+      </div>
+    </section>
+  </main>
+
+  </body>
+</html>
