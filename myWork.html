@@ -9,9 +9,9 @@
 
     <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="style.css" rel="stylesheet" type="text/css"/>
-
+    <script src="port-script.js" defer></script>
     <!--<script src="/index.js" charset="utf-8" defer></script>-->
   </head>
   <body>
@@ -25,22 +25,72 @@
     </header>
 
     <main class="content">
-      <section class="nav-bar-container">
-        <div class="select-container">
-          <a id='page-select-option' href='https://tremperb.github.io/'>Home</a>
-          <a id='page-select-option' href='https://tremperb.github.io/myWork.html'>My Work</a>
-          <a id='page-select-option' href='https://tremperb.github.io/contact.html'>Contact</a>
+      <nav>
+        <div class="nav-bar-container">
+          <div class="select-container">
+            <a id='page-select-option' href='https://tremperb.github.io/'>Home</a>
+          </div>
+          <div class="select-container">
+            <a id='page-select-option' href='https://tremperb.github.io/myWork.html'>Projects</a>
+          </div>
+          <div class="select-container">
+            <a id='page-select-option' href='https://tremperb.github.io/'>Contact</a>
+          </div>
         </div>
-    </section>
+      </nav>
 
     <section class="new-container">
 
       <div class="name-container">
           <h2 class="my-name"><u><em>My Work</em></u></h2>
-          <h3> <em>Various Coding Projects Separated Into Their Corresponding Sections.</em></h3>
 
+          <div class="name-container-u" id="code-type">
+            <h2 class="my-name" id="code-name">Highlighted Projects</h2>
+            <div class="w3-content w3-display-container" style="max-width:800px">
+              <div class="w3-display-container mySlides">
+                <img src="UndeadBladeCover.png" style="width:100%">
+                <p class="highlight-caption">
+                  <strong>Undead Blade</strong> is an individual virtually reality game project which is
+                  currently being developed using Unity3D. This game brings the player into the VR
+                  world with a zombie based wave spawner set in Ancient Rome. Differing from other similar
+                  games, Undead Blade focuses on utilizing a complete melee combat system with realtime physics.
+                  For specific information on this project please click the button below.
+                </p>
+                <div class="highlight-expand" onclick="window.location='https://tremperb.github.io/undeadBlade.html';">
+                  Click For Additional Detail
+                </div>
+              </div>
 
-          <div class="name-container" id="code-type">
+              <div class="w3-display-container mySlides">
+                <img src="solarSystem.png" style="width:100%">
+                <p class="highlight-caption">
+                  <strong>The Solar System</strong> is an indivdual OpenGL project created using C++.
+                  This project outlines the planets in our solar system in a proportional manner(minus the sun). While also
+                  animating their orbital revolution around the sun in accordance with Keplers Law. For greater detail and
+                  source code for this project click the button below.
+                </p>
+                <div class="highlight-expand" onclick="window.location='FinalReport_CS450_Tremper.pdf';">
+                  Click For Additional Detail
+                </div>
+              </div>
+
+              <img class="mySlides" src="UndeadBladeCover.png" style="width:100%">
+
+              <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <h4><strong> <em>Below are additional projects seperated into their corresponding sections.</em></strong></h4>
+
+          <div class="name-container-u" id="code-type">
             <h2 class="my-name" id="code-name">C/C++</h2>
             <div class="info-container-c" id="c-container">
 
@@ -62,11 +112,11 @@
             </div>
           </div>
 
-          <div class="name-container" id="code-type">
+          <div class="name-container-u" id="code-type">
             <h2 class="my-name" id="code-name">Game Development</h2>
 
 
-            <h3> Undead Blade </h3>
+            <h4><strong> <em>Undead Blade</em></strong></h4>
             <div class="info-cont">
               <p>
                 <br>
@@ -79,14 +129,40 @@
               </p>
               <img src="UndeadBladeCover.png" class="game"></img>
             </div>
-
+            <br>
+            <div class="info-container-c" id="c-container">
+            <br><a href="https://tremperb.github.io/undeadBlade.html" class="grid-item">Click here for more information</a>
+            </div>
 
             <br><br><br><br>
 
-            <h3> Time Warp </h3>
+            <h4><strong> <em>Dance of Warriors</em></strong></h4>
+            <div class="info-cont">
+              <p>
+                <br>
+                *This Game is currently in development*<br>
+                This game is being created in a group for our senior project at OSU using Unity3D.<br>
+                This project seeks two explore the idea of a simulated dance in video games.<br>
+                Specifically, how to evoke this feeling of dancing between a human player and enemy AI.<br>
+                This game seeks to simulate this relationship through the use of rhythms, telegraphs, <br>
+                predictability in attack sequences, shifting who can be on the offense, and syncing actions<br>
+                with the music. For more information please click the link below.
+              </p>
+              <div class="info-container">
+                <h3> Sample Gameplay will be added soon </h3>
+              </div>
+            </div>
+            <div class="info-container-c" id="c-container">
+            <br><a href="CS27_Milestone2_2020_draft1_v2.pdf" class="grid-item">Click here for more information</a>
+            </div>
+
+            <br><br><br><br>
+
+            <h4><strong> <em>Time Warp</em></strong></h4>
             <div class="game-container">
               <p>
                 <br>
+                This game was created as a two man project in collaboration with the video game development club at OSU.<br>
                 While exploring space you have gotten trapped in a black hole!<br>
                 An endless loop of random objects are now flying towards you!<br>
                 Avoid the objects at all costs and see how long you can survive as time warps around you!<br>
@@ -94,33 +170,18 @@
               </p>
                 <iframe src="https://i.simmer.io/@tremperb/timewarp" class="game"></iframe>
             </div>
+            <br><br>
             <div class="info-container-c" id="c-container">
-            <br><a href="https://github.com/tremperb/portfolioWork/tree/master/Unity3d/Timewarp" class="grid-item">Click Here for full project on github</a>
+            <br><a href="https://github.com/tremperb/portfolioWork/tree/master/Unity3d/Timewarp" class="grid-item">Click here for the full project on github</a>
             </div>
 
-            <br><br><br><br>
 
-            <h3> Local War </h3>
-            <div class="info-cont">
-              <p>
-                <br>
-                *This Game is currently in development*<br>
-                This is a group project made in collaboration with the Video Game Development Club at OSU<br>
-                War has come!<br>
-                Work with your friends in this team like shooter game to rack up points in this competitive setting<br>
-              </p>
-              <div class="info-container">
-                <h3> Sample Gameplay will be added soon </h3>
-              </div>
-            </div>
-            <div class="info-container-c" id="c-container">
-            <br><a href="https://github.com/OSUGameDev/LocalWar" class="grid-item">Click here for the latest build on github</a>
-            </div>
+
 
 
           </div>
 
-        <div class="name-container" id="code-type">
+        <div class="name-container-u" id="code-type">
           <h2 class="my-name" id="code-name">Web Development</h2>
           <div class="info-container-c" id="c-container">
 
@@ -133,7 +194,7 @@
           </div>
         </div>
 
-        <div class="name-container" id="code-type">
+        <div class="name-container-u" id="code-type">
           <h2 class="my-name" id="code-name">Artificial Intelligence</h2>
           <div class="info-container-c" id="c-container">
 

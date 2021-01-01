@@ -8,6 +8,11 @@ a {
   color: white;
 }
 
+main {
+  padding: 0;
+  /*background-color: #2C2A2B;*/
+}
+
 a:hover {
   color: black;
   text-decoration: underline;
@@ -26,6 +31,7 @@ a:hover {
 }
 
 header {
+
   background-color: white;
   text-align: center;
 }
@@ -35,25 +41,50 @@ header img {
   width: 200px;
 }
 
-.nav-bar-container {
+nav {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -2px;
+  padding:40px;
   text-align: center;
+  padding: 10px;
+  background-color: white;
+
+
 }
 
-.select-container {
-  display: inline-block;
-  align-self: center;
-  margin-top: 0px;
-  width: auto;
+nav[stuck] {
+  box-shadow: 0 4px 2px -2px gray;
+
+}
+
+.nav-bar-container {
+
   text-align: center;
+  display: inline-block;
   border-top: 1px solid #2C2A2B;
   border-bottom: 1px solid #2C2A2B;
   padding: 10px;
   background-color: white;
+  margin-top: 0px;
+  width: 50%;
+}
+
+.select-container {
+
+  display: inline-block;
+  align-self: center;
+  margin-top: 0px;
+  width: 32%;
+  text-align: center;
+
+
 }
 
 #page-select-option {
-  padding: 50px;
   color: #2C2A2B;
+
 }
 
 .new-container {
@@ -66,6 +97,15 @@ header img {
   text-align: center;
   box-shadow: 4px 4px 8px;
   width: 80%;
+}
+
+.name-container-u {
+  display: inline-block;
+  margin: 40px;
+  text-align: center;
+  box-shadow: 4px 4px 8px;
+  width: 80%;
+  padding: 15px;
 }
 
 .name-container-h {
@@ -86,15 +126,16 @@ header img {
 }
 
 .info-container {
-  width: 50%;
+  width: 60%;
   display: inline-block;
   text-align: center;
   border: 1px solid black;
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 20px;
   box-shadow: 4px 4px 8px;
+  margin-top: 10px;
   margin-bottom: 50px;
 }
 
@@ -113,7 +154,27 @@ header img {
   display: grid;
   grid-template-columns: auto auto auto;
 
+  margin: -10px;
+}
+.highlight-caption {
+  background-color: lightgrey;
+  border: 1px solid black;
+}
+.mySlides {
+  display:none;
+
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor:pointer;
+  background-color: grey;
   padding: 10px;
+}
+
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
 }
 
 .grid-item {
@@ -127,9 +188,34 @@ header img {
 
 .grid-item:hover {
   background-color: white;
+
+}
+
+
+.highlight-expand {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #2C2A2B;
+  margin-top: 10px;
+  background-color: #2C2A2B;
+  border-radius: 5px;
+  color: white;
+
+}
+
+.highlight-expand:hover {
+  cursor:pointer;
+  background-color: white;
+  color: black;
+  text-decoration: underline;
 }
 
 .name-container h3 {
+  font-size: 30px;
+  margin: 0px;
+}
+
+.name-container-u h3 {
   font-size: 30px;
   margin: 0px;
 }
@@ -147,6 +233,13 @@ header img {
   box-shadow: 4px 4px 8px;
   width: 75%;
   height: 75%;
+}
+
+.game-img {
+  border: 1px solid #2C2A2B;
+  box-shadow: 4px 4px 8px;
+  width: 40%;
+  height: 40%;
 }
 
 .name-container-f {

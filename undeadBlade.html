@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Work</title>
+
+    <!-- This 3rd-party stylesheet makes available the font families to be used for this page ("Roboto" and "Roboto Slab"). -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100" rel="stylesheet">
+
+    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="port-script.js" defer></script>
+    <!--<script src="/index.js" charset="utf-8" defer></script>-->
+    
+  </head>
+  <body  onload="currentDiv(1)">
+
+    <header>
+
+      <div class="header-image-container">
+        <img src="headerImg.png" alt="Brayden Tremper">
+      </div>
+
+    </header>
+
+    <main class="content">
+      <nav>
+        <div class="nav-bar-container">
+          <div class="select-container">
+            <a id='page-select-option' href='https://tremperb.github.io/'>Home</a>
+          </div>
+          <div class="select-container">
+            <a id='page-select-option' href='https://tremperb.github.io/myWork.html'>Projects</a>
+          </div>
+          <div class="select-container">
+            <a id='page-select-option' href='https://tremperb.github.io/'>Contact</a>
+          </div>
+        </div>
+      </nav>
+
+    <section class="new-container">
+
+      <div class="name-container">
+        <h2 class="my-name"><u><em>Undead Blade</em></u></h2>
+        <div class="name-container-u" id="code-type">
+          <br>
+          <img src="UndeadBladeCover.png" class="game-img"></img>
+          <br>
+          <h4> <em>About</em></h4>
+          <p> Undead Blade is an individual virtually reality game project which is currently being developed
+            using Unity3D. This game brings the player into the VR world with a zombie based wave spawner set in Ancient Rome.
+            Differing from other similar games, Undead Blade focuses on utilizing a complete melee combat system with realtime physics.
+          </p>
+        <br>
+        <h4> <em>The Specifics</em></h4>
+         <p>
+           When viewing the major physics within the project all weapons are velocity tracked, creating a drag when swung
+           and not penetrating other meshes, unless desired when stabbing. Also, the zombie in the game is created as a complete active ragdoll.
+           Here the zombies limbs are connected through a group of configurable joints with a spring applied to each joint creating a standing effect,
+           then a disabled copy of the zombie focuses on creating an animation which the active ragdoll zombie version then mimics this by rotating each
+           of the configurable joints to create an animated effect while still being fully susceptible to physics. With this in place, the zombie can then be controlled
+           using a force applied to the hips allowing it to be propelled forward.
+         </p>
+
+         <p>
+           Following this, the melee combat system build off of this physics scenario. Specifically two topics are targetted, a general hit and stabbing.
+           Due to the implementation of velocity tracked weapons and the zombies being constructed as active ragdolls, the general hit is already
+           taken care off and responds as expected when comparing a similar scenario in the real world. When viewing the idea of stabbing, the weapons have a trigger collider
+           on the tip of the blade which when triggered on the zombie it checks the velocity of the stab and the angle between the collider and the zombie to ensure this relationship
+           can only be achieved when directed in the forward direction. Upon these requirements being met the objects are connected by ignoring the physics interactions and
+           creating a configurable joint connecting the two objects and locking the movement besides the blade direction allowing the stabbed object to move on the blade to continue the stab operation. Upon a disconnection
+           between the blade and the object the configurable joint is then destroyed.
+         </p>
+       </div>
+
+          <div class="name-container-u" id="code-type">
+            <h2 class="my-name" id="code-name">Sample Screenshots</h2>
+            <div class="w3-content w3-display-container" style="max-width:800px">
+
+              <img class="mySlides" src="UndeadBladeCover.png" style="width:100%">
+              <img class="mySlides" src="headerImg.png" style="width:100%">
+              <img class="mySlides" src="UndeadBladeCover.png" style="width:100%">
+              <img class="mySlides" src="UndeadBladeCover.png" style="width:100%">
+
+              <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="name-container-u" id="code-type">
+            <h2 class="my-name" id="code-name">Sample Gameplay</h2>
+            <div class="w3-content w3-display-container" style="max-width:800px">
+
+              <img class="emb-player" src="UndeadBladeCover.png" style="width:100%">
+
+
+
+            </div>
+          </div>
+
+
+      </div>
+
+
+
+    </section>
+  </main>
+
+  </body>
+</html>
