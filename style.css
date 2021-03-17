@@ -183,7 +183,12 @@ nav[stuck] {
   margin: 10px;
   background-color: #2C2A2B;
   border-radius: 5px;
+}
 
+
+.centered-boxes {
+  text-align: center;
+  margin: 50px;
 }
 
 .grid-item:hover {
