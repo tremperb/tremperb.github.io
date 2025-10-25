@@ -128,6 +128,13 @@ nav[stuck] {
 
 .my-name {
   font-size: 50px;
+  color: black;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+}
+
+.my-title {
+  color: black;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
 }
 
 .info-container {
