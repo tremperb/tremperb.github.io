@@ -113,6 +113,8 @@ nav[stuck] {
   padding: 15px;
 }
 
+
+
 .name-container-h {
   display: inline-block;
   margin: 40px;
@@ -125,6 +127,55 @@ nav[stuck] {
   -o-background-size: cover;
   background-size: cover;
 }
+
+/* --- Professional centered list with glowing bullets --- */
+
+.name-container ul,
+.name-container-u ul {
+  text-align: left;             /* Align list content left */
+  display: inline-block;        /* Keeps the list centered as a block */
+  margin: 0 auto;
+  padding-left: 1.5em;
+  list-style: none;             /* Hide default bullets */
+}
+
+.name-container ul li,
+.name-container-u ul li {
+  position: relative;
+  padding-left: 1.2em;
+  margin-bottom: 0.6em;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: left;
+  color: #111;                  /* Default text color */
+}
+
+/* --- Custom bullet with subtle white glow --- */
+.name-container ul li::before,
+.name-container-u ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: #fff;                  /* White bullet */
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8); /* Soft glow */
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* --- Optional hover effect for interactivity --- */
+.name-container ul li:hover,
+.name-container-u ul li:hover {
+  color: #000;
+  transform: translateX(3px);
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.name-container ul li:hover::before,
+.name-container-u ul li:hover::before {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
 
 .my-name {
   font-size: 50px;
