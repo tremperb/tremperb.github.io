@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Dungeon Boss: Respawned</title>
+<head>
+  <meta charset="utf-8">
+  <title>Dungeon Boss: Respawned</title>
 
-    <!-- This 3rd-party stylesheet makes available the font families to be used for this page ("Roboto" and "Roboto Slab"). -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100" rel="stylesheet">
+  <!-- This 3rd-party stylesheet makes available the font families to be used for this page ("Roboto" and "Roboto Slab"). -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100" rel="stylesheet">
 
-    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="../style.css" rel="stylesheet" type="text/css"/>
-    <script src="../port-script.js" defer></script>
-    <link rel="icon" href="../tab-icon.png">
-    <!--<script src="/index.js" charset="utf-8" defer></script>-->
+  <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="../style.css" rel="stylesheet" type="text/css"/>
+  <script src="../port-script.js" defer></script>
+  <link rel="icon" href="../tab-icon.png">
+  <!--<script src="/index.js" charset="utf-8" defer></script>-->
 
-  </head>
-  <body  onload="currentDiv(1)">
+</head>
+<body  onload="currentDiv(1)">
 
-    <header>
+  <header>
 
-      <div class="header-image-container">
-        <img src="../headerImg.png" alt="Brayden Tremper">
-      </div>
+    <div class="header-image-container">
+      <img src="../headerImg.png" alt="Brayden Tremper">
+    </div>
 
-    </header>
+  </header>
 
-    <main class="content">
-      <nav>
-        <div class="nav-bar-container">
-          <div class="select-container">
-            <a id='page-select-option' href='https://tremperb.github.io/'>Home</a>
-          </div>
-          <div class="select-container">
-            <a id='page-select-option' href='https://tremperb.github.io/projects.html'>Projects</a>
-          </div>
-          <div class="select-container">
-            <a id='page-select-option' href='https://tremperb.github.io/contact.html'>Contact</a>
-          </div>
+  <main class="content">
+    <nav>
+      <div class="nav-bar-container">
+        <div class="select-container">
+          <a id='page-select-option' href='https://tremperb.github.io/'>Home</a>
         </div>
-      </nav>
+        <div class="select-container">
+          <a id='page-select-option' href='https://tremperb.github.io/projects.html'>Projects</a>
+        </div>
+        <div class="select-container">
+          <a id='page-select-option' href='https://tremperb.github.io/contact.html'>Contact</a>
+        </div>
+      </div>
+    </nav>
 
     <section class="new-container">
-
       <div class="name-container">
         <h2 class="my-name"><u><em>Dungeon Boss: Respawned</em></u></h2>
         <div class="name-container-u" id="code-type">
@@ -50,17 +49,44 @@
           <img src="../dungeon_boss_cover.png" class="game-img"></img>
           <br>
           <h4> <em>About</em></h4>
-          <p> My Description...
+          <p>
+            Dungeon Boss is a mobile RPG with millions of players worldwide, featuring strategic combat, collectible characters,
+            and dynamic in-game events.
           </p>
-        <br>
-        <h4> <em>The Specifics</em></h4>
-         <p>
-           ....
-         </p>
-       </div>
-     </div>
+          <br>
+          <h4> <em>My Contributions</em></h4>
+          <p>
+            As part of the engineering team, I focused on designing and implementing responsive, high-performance UI systems,
+            as well as supporting live operations to enhance player engagement:
+          </p>
+          <ul>
+            <li>Developed and maintained core UI elements including menus, HUDs, and interactive dialogs.</li>
+            <li>Ensured smooth performance and polish across a wide range of devices for consistent player experience.</li>
+            <li>Contributed to iterative updates, bug fixes, and optimizations to support ongoing live events and player interactions.</li>
+            <li>Collaborated with designers, QA, and other engineers to deliver polished and maintainable features efficiently.</li>
+          </ul>
+          <p>
+            These efforts helped create a seamless, engaging interface for players while maintaining high standards of technical quality.
+          </p>
+          <br>
+        </div>
+      </div>
+
+
+      <div class="name-container-u" id="code-type">
+        <h2 class="my-name" id="code-name">Sample Screenshots</h2>
+        <div class="w3-content w3-display-container" style="max-width:800px">
+          <img class="mySlides" src="dungeon_boss_ui.jpg" style="width:100%">
+
+          <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
+            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  </body>
+</body>
 </html>
