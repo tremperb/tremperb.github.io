@@ -11,39 +11,25 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="../style.css" rel="stylesheet" type="text/css"/>
-  <script src="../port-script.js" defer></script>
+  <script src="/port-script.js?v=123" defer></script>
   <link rel="icon" href="../tab-icon.png">
-  <!--<script src="/index.js" charset="utf-8" defer></script>-->
-
+  <script src="/index.js" charset="utf-8" defer></script>
 </head>
-<body  onload="currentDiv(1)">
 
+<body>
   <header>
-
     <div class="header-image-container">
       <img src="../headerImg.png" alt="Brayden Tremper">
     </div>
-
   </header>
 
   <main class="content">
-    <nav>
-      <div class="nav-bar-container">
-        <div class="select-container">
-          <a id='page-select-option' href='https://tremperb.github.io/'>Home</a>
-        </div>
-        <div class="select-container">
-          <a id='page-select-option' href='https://tremperb.github.io/projects.html'>Projects</a>
-        </div>
-        <div class="select-container">
-          <a id='page-select-option' href='https://tremperb.github.io/contact.html'>Contact</a>
-        </div>
-      </div>
-    </nav>
+    <nav id="site-nav"></nav>
 
     <section class="new-container">
       <div class="name-container">
         <h2 class="my-name"><u><em>Netflix Stories</em></u></h2>
+
         <div class="name-container-u" id="code-type">
           <br>
           <img src="../netflix_stories_cover.jpg" class="game-img"></img>
@@ -57,7 +43,7 @@
           <br>
           <h4> <em>My Contributions</em></h4>
           <p>
-            As a Senior Software Engineer, I led the development of most player-facing systems, including:
+            As a Senior Software Engineer, I led the development of many player-facing systems, including:
           </p>
           <ul>
             <li>Character creation and customization tools, enabling players to craft unique avatars.</li>
@@ -80,27 +66,155 @@
             <li>Supported live operations post-launch, iterating on features to improve engagement and stability.</li>
           </ul>
           <br>
-          <h4> <em>Impact</em></h4>
-          <p>
-            My contributions directly shaped the player experience, ensuring scalable, dynamic, and polished systems
-            that supported the game's complex branching narratives and interactive content.
-          </p>
-          <br>
         </div>
       </div>
 
-      <div class="name-container-u" id="code-type">
-        <h2 class="my-name" id="code-name">Sample Images</h2>
-        <div class="w3-content w3-display-container" style="max-width:800px">
-          <img class="mySlides" src="netflix_stories_character_creator.jpg" style="width:100%">
 
-          <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
-            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-          </div>
+
+      <!-- Features Section -->
+      <section class="new-container">
+        <div class="name-container">
+          <h2 class="my-name"><u><em>Features</em></u></h2>
+
+            <div class="name-container-u" id="code-type">
+                <h2 class="my-name" id="code-name">Character Creator</h2>
+
+                <div class="w3-content w3-display-container" id="carousel-tcc" style="max-width:800px">
+                    <img class="mySlides" src="/images/netflix_stories/tcc/tcc_v2.png" style="width:100%">
+
+                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
+                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-tcc', -1)">&#10094;</div>
+                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs('carousel-tcc', 1)">&#10095;</div>
+
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-tcc', 1)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="name-container-u" id="code-type">
+                <h2 class="my-name" id="code-name">Dialogue System</h2>
+
+                <div class="w3-content w3-display-container" id="carousel-dialogue" style="max-width:800px">
+                    <img class="mySlides" src="/images/netflix_stories/dialogue/d_0.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/dialogue/d_1.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/dialogue/d_2.png" style="width:100%">
+
+                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
+                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-dialogue', -1)">&#10094;</div>
+                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs('carousel-dialogue', 1)">&#10095;</div>
+
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-dialogue', 1)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-dialogue', 2)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-dialogue', 3)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="name-container-u" id="code-type">
+                <h2 class="my-name" id="code-name">Character Bios</h2>
+
+                <div class="w3-content w3-display-container" id="carousel-bios" style="max-width:800px">
+                    <img class="mySlides" src="/images/netflix_stories/bios/i_0.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/bios/i_1.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/bios/i_2.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/bios/i_3.png" style="width:100%">
+
+                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
+                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-bios', -1)">&#10094;</div>
+                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs('carousel-bios', 1)">&#10095;</div>
+
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-bios', 1)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-bios', 2)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-bios', 3)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-bios', 4)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="name-container-u" id="code-type">
+                <h2 class="my-name" id="code-name">Rewards</h2>
+
+                <div class="w3-content w3-display-container" id="carousel-rewards" style="max-width:800px">
+                    <img class="mySlides" src="/images/netflix_stories/mh_rewards/mh_rewards_0.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/mh_rewards/mh_rewards_1.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/mh_rewards/mh_rewards_2.png" style="width:100%">
+
+                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
+                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-rewards', -1)">&#10094;</div>
+                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs('carousel-rewards', 1)">&#10095;</div>
+
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-rewards', 1)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-rewards', 2)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-rewards', 3)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="name-container-u" id="code-type">
+                <h2 class="my-name" id="code-name">Wiring Minigame</h2>
+
+                <div class="w3-content w3-display-container" id="carousel-wiring" style="max-width:800px">
+                    <img class="mySlides" src="/images/netflix_stories/wiring/i_0.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/wiring/i_1.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/wiring/i_2.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/wiring/i_3.png" style="width:100%">
+
+                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
+                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-wiring', -1)">&#10094;</div>
+                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs('carousel-wiring', 1)">&#10095;</div>
+
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-wiring', 1)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-wiring', 2)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-wiring', 3)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-wiring', 4)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="name-container-u" id="code-type">
+                <h2 class="my-name" id="code-name">Password Minigame</h2>
+
+                <div class="w3-content w3-display-container" id="carousel-password" style="max-width:800px">
+                    <img class="mySlides" src="/images/netflix_stories/password/i_0.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/password/i_1.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/password/i_2.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/password/i_3.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/password/i_4.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/password/i_5.png" style="width:100%">
+
+                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
+                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-password', -1)">&#10094;</div>
+                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs('carousel-password', 1)">&#10095;</div>
+
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-password', 1)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-password', 2)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-password', 3)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-password', 4)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-password', 5)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-password', 6)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="name-container-u" id="code-type">
+                <h2 class="my-name" id="code-name">Persuasion Meter</h2>
+
+                <div class="w3-content w3-display-container" id="carousel-persuasion" style="max-width:800px">
+                    <img class="mySlides" src="/images/netflix_stories/mh_persuasion/mh_persuasion_0.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/mh_persuasion/mh_persuasion_1.png" style="width:100%">
+
+                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
+                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-persuasion', -1)">&#10094;</div>
+                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs('carousel-persuasion', 1)">&#10095;</div>
+
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-persuasion', 1)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-persuasion', 2)"></span>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
+      </section>
     </section>
   </main>
 
