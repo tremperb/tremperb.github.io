@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="../style.css" rel="stylesheet" type="text/css"/>
-    <script src="../port-script.js" defer></script>
-    <link rel="icon" href="../tab-icon.png">
+    <script src="/port-script.js" defer></script>
+    <link rel="icon" href="/images/core/tab-icon.png">
     <script src="/index.js" charset="utf-8" defer></script>
 
   </head>
-  <body  onload="currentDiv(1)">
+  <body>
 
     <header>
 
@@ -66,7 +66,7 @@
 
           <div class="name-container-u" id="code-type">
             <h2 class="my-name" id="code-name">Sample Screenshots</h2>
-            <div class="w3-content w3-display-container" style="max-width:800px">
+            <div class="w3-content w3-display-container" id="carousel-undead-screenshots" style="max-width:800px">
               <img class="mySlides" src="/images/undead_blade/arena_scene_view.png" style="width:100%">
               <img class="mySlides" src="/images/undead_blade/sword_clash.png" style="width:100%">
               <img class="mySlides" src="/images/undead_blade/ragdoll_collider.png" style="width:100%">
@@ -78,16 +78,18 @@
               <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
                 <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
                 <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-undead-screenshots', 1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-undead-screenshots', 2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-undead-screenshots', 3)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-undead-screenshots', 4)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-undead-screenshots', 5)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-undead-screenshots', 6)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-undead-screenshots', 7)"></span>
               </div>
             </div>
           </div>
+
+
 
           <div class="name-container-u" id="code-type">
             <h2 class="my-name" id="code-name">Sample Gameplay</h2>

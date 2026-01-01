@@ -11,17 +11,17 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="../style.css" rel="stylesheet" type="text/css"/>
-  <script src="../port-script.js" defer></script>
-  <link rel="icon" href="../tab-icon.png">
+  <script src="/port-script.js" defer></script>
+  <link rel="icon" href="/images/core/tab-icon.png">
   <script src="/index.js" charset="utf-8" defer></script>
 
 </head>
-<body  onload="currentDiv(1)">
+<body>
 
   <header>
 
     <div class="header-image-container">
-      <img src="../headerImg.png" alt="Brayden Tremper">
+      <img src="/images/core/headerImg.png" alt="Brayden Tremper">
     </div>
 
   </header>
@@ -34,7 +34,7 @@
         <h2 class="my-name"><u><em>Dungeon Boss: Respawned</em></u></h2>
         <div class="name-container-u" id="code-type">
           <br>
-          <img src="../dungeon_boss_cover.png" class="game-img"></img>
+          <img src="/images/dungeon_boss/dungeon_boss_cover.png" class="game-img"></img>
           <br>
           <h4> <em>About</em></h4>
           <p>
@@ -63,13 +63,13 @@
 
       <div class="name-container-u" id="code-type">
         <h2 class="my-name" id="code-name">Sample Screenshots</h2>
-        <div class="w3-content w3-display-container" style="max-width:800px">
+        <div class="w3-content w3-display-container" id="carousel-dungeon-screenshots" style="max-width:800px">
           <img class="mySlides" src="/images/dungeon_boss/dungeon_boss_ui.jpg" style="width:100%">
 
           <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
             <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
             <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv('carousel-dungeon-screenshots', 1)"></span>
           </div>
         </div>
       </div>
