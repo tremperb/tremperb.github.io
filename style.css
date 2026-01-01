@@ -183,6 +183,13 @@ nav[stuck] {
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
 }
 
+.my-item-head {
+  font-size: 15px;
+  color: #3b3b3b;
+  font-weight: bold;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+}
+
 .my-title {
   color: black;
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);

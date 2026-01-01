@@ -10,7 +10,7 @@
   <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link href="../style.css" rel="stylesheet" type="text/css"/>
+  <link href="../style.css?v=123" rel="stylesheet" type="text/css"/>
   <script src="/port-script.js?v=123" defer></script>
   <link rel="icon" href="../tab-icon.png">
   <script src="/index.js" charset="utf-8" defer></script>
@@ -34,37 +34,48 @@
           <br>
           <img src="../netflix_stories_cover.jpg" class="game-img"></img>
           <br>
-          <h4> <em>About</em></h4>
           <p>
-            Netflix Stories is an interactive narrative game delivering branching storylines and dynamic player choices.
-            Players can shape the story through actions, dialogue, and interactions, supported by responsive UI,
-            immersive camera and environment systems, and scalable content pipelines.
+            <strong><em>Netflix Stories</em></strong> is an interactive mobile game included with a Netflix subscription where players experience visual-novel, choose-your-own-adventure gameplay.
+            Players customize their character, read through dialogue-driven scenes, and make choices that influence relationships and story outcomes in stories based on Netflix shows like 
+            Emily in Paris, Outer Banks, Love Is Blind, Selling Sunset, Perfect Match, Virgin River, and Sex Education.
           </p>
           <br>
-          <h4> <em>My Contributions</em></h4>
-          <p>
-            As a Senior Software Engineer, I led the development of many player-facing systems, including:
-          </p>
+          <div>
+            <h4 class="my-item-head">Role</h4>
+            Senior Software Engineer
+          </div>
+          <br>
+          <div>
+            <h4 class="my-item-head">Company</h4>
+            Netflix Games (Boss Fight Entertainment)
+          </div>
+
+          <br>
+          <div>
+            <h4 class="my-item-head">Background</h4>
+            As a Senior Software Engineer, I led the development of UI systems, core gameplay features, and editor tools to support Netflix Stories from prototype throughg release. I regularily owned
+            features and product level systems end-to-end, collaborating closely with other disciplines such as design, art, QA, and more to deliver polished performant experiences that supported
+            millions of worldwide players.
+          </div>
+
+          <br>
+          <div>
+            <h4 class="my-item-head">Contributions</h4>
+            I worked across both tooliong and player facing features on Netflix Stories, carrying them through technical design, implementation, and ongoing support. My primary focus revolved around UI features, collaborating heavily with Art and design to tranlate mocks into fully polished in-engine screens, following common architectural patterns like MVVM and MVC.
+            Some of my core contributions across Netflix Stories include:
+          </div>
+          <br>
+
           <ul>
-            <li>Character creation and customization tools, enabling players to craft unique avatars.</li>
-            <li>Minigames, interactive moments, and branching narrative triggers.</li>
-            <li>Menus, HUDs, camera, and environmental rulesets that adapt dynamically to story and player choices.</li>
+            <li>‣ Character Creators, Dialogue Systems, Player Progression</li>
+            <li>‣ Achievements, Inventories, Minigames </li>
+            <li>‣ Menus, HUDs, Cameras, Environments, Characters</li>
+            <li>‣ Logic-graph system for defining narrative flows and custom editor windows to support features</li>
+            <li>‣ Mentoring junior engineers </li>
+            <li>‣ Active in code reviews and established coding standards </li>
+            <li>‣ Post-launch live ops support </li>
           </ul>
-          <p>
-            I also built robust internal tools for designers:
-          </p>
-          <ul>
-            <li>Logic-graph system for defining complex narrative flows, actions, and environment changes.</li>
-            <li>Proto data generation pipelines from designer specifications, ensuring consistent and scalable content delivery.</li>
-          </ul>
-          <p>
-            Beyond feature development, I:
-          </p>
-          <ul>
-            <li>Mentored junior engineers and set standards for scalable, maintainable UI and gameplay systems.</li>
-            <li>Designed technical solutions for high-performance, data-driven systems under tight production constraints.</li>
-            <li>Supported live operations post-launch, iterating on features to improve engagement and stability.</li>
-          </ul>
+          
           <br>
         </div>
       </div>
@@ -72,15 +83,17 @@
 
 
       <!-- Features Section -->
-      <section class="new-container">
+      <section class="new-container"> 
         <div class="name-container">
           <h2 class="my-name"><u><em>Features</em></u></h2>
+
+            <p> Player facing features in which I acted as the owning engineer can be seen below. This is not an all encompassing list. </p>
 
             <div class="name-container-u" id="code-type">
                 <h2 class="my-name" id="code-name">Character Creator</h2>
 
                 <div class="w3-content w3-display-container" id="carousel-tcc" style="max-width:800px">
-                    <img class="mySlides" src="/images/netflix_stories/tcc/tcc_v2.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/tcc/tcc_v2.png" style="width:100%" loading="lazy" decoding="async">
 
                     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
                         <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-tcc', -1)">&#10094;</div>
@@ -95,9 +108,9 @@
                 <h2 class="my-name" id="code-name">Dialogue System</h2>
 
                 <div class="w3-content w3-display-container" id="carousel-dialogue" style="max-width:800px">
-                    <img class="mySlides" src="/images/netflix_stories/dialogue/d_0.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/dialogue/d_1.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/dialogue/d_2.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/dialogue/d_0.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/dialogue/d_1.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/dialogue/d_2.png" style="width:100%" loading="lazy" decoding="async">
 
                     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
                         <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-dialogue', -1)">&#10094;</div>
@@ -114,10 +127,10 @@
                 <h2 class="my-name" id="code-name">Character Bios</h2>
 
                 <div class="w3-content w3-display-container" id="carousel-bios" style="max-width:800px">
-                    <img class="mySlides" src="/images/netflix_stories/bios/i_0.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/bios/i_1.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/bios/i_2.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/bios/i_3.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/bios/i_0.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/bios/i_1.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/bios/i_2.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/bios/i_3.png" style="width:100%" loading="lazy" decoding="async">
 
                     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
                         <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-bios', -1)">&#10094;</div>
@@ -135,9 +148,9 @@
                 <h2 class="my-name" id="code-name">Rewards</h2>
 
                 <div class="w3-content w3-display-container" id="carousel-rewards" style="max-width:800px">
-                    <img class="mySlides" src="/images/netflix_stories/mh_rewards/mh_rewards_0.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/mh_rewards/mh_rewards_1.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/mh_rewards/mh_rewards_2.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/mh_rewards/mh_rewards_0.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/mh_rewards/mh_rewards_1.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/mh_rewards/mh_rewards_2.png" style="width:100%" loading="lazy" decoding="async">
 
                     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
                         <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-rewards', -1)">&#10094;</div>
@@ -154,10 +167,10 @@
                 <h2 class="my-name" id="code-name">Wiring Minigame</h2>
 
                 <div class="w3-content w3-display-container" id="carousel-wiring" style="max-width:800px">
-                    <img class="mySlides" src="/images/netflix_stories/wiring/i_0.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/wiring/i_1.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/wiring/i_2.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/wiring/i_3.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/wiring/i_0.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/wiring/i_1.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/wiring/i_2.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/wiring/i_3.png" style="width:100%" loading="lazy" decoding="async">
 
                     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
                         <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-wiring', -1)">&#10094;</div>
@@ -175,12 +188,12 @@
                 <h2 class="my-name" id="code-name">Password Minigame</h2>
 
                 <div class="w3-content w3-display-container" id="carousel-password" style="max-width:800px">
-                    <img class="mySlides" src="/images/netflix_stories/password/i_0.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/password/i_1.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/password/i_2.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/password/i_3.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/password/i_4.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/password/i_5.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/password/i_0.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/password/i_1.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/password/i_2.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/password/i_3.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/password/i_4.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/password/i_5.png" style="width:100%" loading="lazy" decoding="async">
 
                     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
                         <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-password', -1)">&#10094;</div>
@@ -200,8 +213,8 @@
                 <h2 class="my-name" id="code-name">Persuasion Meter</h2>
 
                 <div class="w3-content w3-display-container" id="carousel-persuasion" style="max-width:800px">
-                    <img class="mySlides" src="/images/netflix_stories/mh_persuasion/mh_persuasion_0.png" style="width:100%">
-                    <img class="mySlides" src="/images/netflix_stories/mh_persuasion/mh_persuasion_1.png" style="width:100%">
+                    <img class="mySlides" src="/images/netflix_stories/mh_persuasion/mh_persuasion_0.png" style="width:100%" loading="lazy" decoding="async">
+                    <img class="mySlides" src="/images/netflix_stories/mh_persuasion/mh_persuasion_1.png" style="width:100%" loading="lazy" decoding="async">
 
                     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
                         <div class="w3-left w3-hover-text-khaki" onclick="plusDivs('carousel-persuasion', -1)">&#10094;</div>
