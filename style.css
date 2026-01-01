@@ -121,7 +121,7 @@ nav[stuck] {
   text-align: center;
   box-shadow: 4px 4px 8px;
   width: 80%;
-  background: url(background.png) no-repeat center center;
+  background: url(/images/core/background.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
